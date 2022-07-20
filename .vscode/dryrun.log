@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/zhuzixuan/Desktop/computer science/CS50'
+make: Leaving directory `/Users/zhuzixuan/Desktop/computer science/CS50'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>shows</title>
+    </head>
+    <body>
+
+        <input autocomplete="off" autofocus placeholder="Query" type="search">
+
+        <!--empty by default-->
+        <ul></ul>
+
+        <script>
+    
+            let input = document.querySelector('input');
+            input.addEventListener('input', async function() {
+                /* these 3 lines is to plug all those li's into the UL after the fact 
+                and changing the so-called dom */
+                // fetching: GET or POST information to a server without reloading the whole page
+                let response = await fetch('/search?q=' + input.value);
+                // get the text in the response and store it in the shows
+                let shows = await response.text();
+                document.querySelector('ul').innerHTML = shows;
+            });
+
+        </script>
+
+    </body>
+</html>

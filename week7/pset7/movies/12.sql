@@ -1,0 +1,1 @@
+SELECT title FROM movies WHERE movies.id IN (SELECT A.movie_id FROM (SELECT movie_id FROM stars, people WHERE people.id = stars.person_id AND name = "Johnny Depp") AS A JOIN (SELECT movie_id FROM stars, people WHERE people.id = stars.person_id AND name = "Helena Bonham Carter") AS B ON A.movie_id = B.movie_id);

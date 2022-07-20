@@ -1,0 +1,29 @@
+sort1 uses: bubble sort
+How do you know?: Because in reversed50000, bubble sort will takes the longest time.
+It need to compare and swap all the time.
+
+sort2 uses: merge sort
+How do you know?: In the sorted50000, it need to compare nlong n times, while bubbles sort have will need n^2 times.
+In the reversed50000, it need to compare nlong n times, while selection sort have to go through n^2 times.
+
+sort3 uses: selection sort
+How do you know?: Because even the numbers are sorted, this sort method will have to go through n^2 times.
+
+selection sort, bubble sort, or merge sort
+time ./[sort_file] [text_file.txt].
+time ./sort1 random50000.txt
+
+sorted50000.txt
+sort1: 0m0.739s
+sort2: 0m0.713s
+sort3: 0m3.376s
+
+random50000.txt
+sort1: 0m7.516s
+sort2: 0m0.520s
+sort3: 0m3.122s
+
+reversed50000.txt:
+sort1: 0m5.504s
+sort2: 0m0.697s
+sort3: 0m3.471s
