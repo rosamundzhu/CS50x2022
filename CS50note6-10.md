@@ -858,4 +858,5 @@ Jinja Template
 
 ## Week 10  
 the memory of the elements in an array are stored **contiguously**   
-'in random locations that happen to be available' is probably describing your use of malloc in the heap  
+
+in random locations that happen to be available' is probably describing your use of malloc in the heap  
